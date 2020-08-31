@@ -28,7 +28,7 @@ SECRET_KEY = '6!jds3@!t5yku9*wxk70qk7cidj2jk^7phs5mqh!&9v1gmnrs6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['joebloodbank.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['joblood.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -149,7 +149,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join('staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
